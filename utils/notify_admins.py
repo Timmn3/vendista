@@ -10,7 +10,7 @@ from loguru import logger
 async def on_startup_notufy(dp: Dispatcher):
     for admin in admins:
         try:
-            text = 'Бот запущен'
+            text = 'Бот vendista запущен'
             await dp.bot.send_message(chat_id=admin, text=text)
         except Exception as err:
             logging.exception(err)
